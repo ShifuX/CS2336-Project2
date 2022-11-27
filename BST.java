@@ -28,10 +28,7 @@ class BST<E extends Comparable<E>> extends AbstractTree<E> {
         return false;
     }
 
-    @Override /**
-               * Insert element e into the binary search tree.
-               * Return true if the element is inserted successfully.
-               */
+    @Override 
     public boolean insert(E e) {
         if (root == null)
             root = createNewNode(e); // Create a new root
